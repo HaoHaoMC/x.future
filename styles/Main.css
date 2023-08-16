@@ -1,0 +1,85 @@
+/* 不可选中 */
+.unselected {
+    user-select: none;
+}
+
+/* 可选中 */
+.selected {
+    user-select: text;
+}
+
+/* 字体大小: 30 */
+.font30 {
+    font-size: 30px;
+}
+
+/* 字体大小: 25 */
+.font25 {
+    font-size: 25px;
+}
+
+/* 字体大小: 20 */
+.font20 {
+    font-size: 20px;
+}
+
+/* 字体大小: 15 */
+.font15 {
+    font-size: 15px;
+}
+
+/* 圆角底色 */
+.underorange {
+    background-color: rgba(255, 120, 0, 50%);
+    border-radius: 5px;
+}
+
+/* 无操作文本: 黑色 */
+a {
+    color: black;
+
+}
+
+/* 去除下划线 */
+a:link {
+    text-decoration: none;
+
+}
+
+/* 悬停颜色 */
+a:hover {
+    color: orange;
+}
+
+/* 点击后颜色 */
+a:active {
+    color: rgb(255, 200, 0);
+
+}
+
+/* 按钮颜色 */
+button {
+    background-color: rgb(200, 200, 200);
+    font-size: 20px;
+    border: none;
+}
+
+/* 按钮悬停颜色 */
+button:hover {
+    background-color: orange;
+}
+
+/* 按钮点击颜色  */
+button:active {
+    background-color: rgb(255, 200, 0);
+}
+
+/* 简介的(最小,大)宽, 高度 */
+#information {
+    width: 150px;
+    height: 100px;
+    min-width: 150px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 200px;
+}

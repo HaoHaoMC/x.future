@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>X- 登记页</title>
+    <link rel="icon" href="images/Icon.png" sizes="16x16">
+    <style>
+        @import "styles/Main.css";
+    </style>
+</head>
+
+<body>
+    <span class="unselected">
+        <a href="Home.html">
+            <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150">
+        </a>
+    </span>
+
+    <h2>
+        <a href="Sign.html">注册</a>
+        /
+        <a href="Log.html">登录</a>
+
+    </h2>
+    <table width="350">
+        <!-- 第一行: 昵称 -->
+        <tr>
+            <td class="unselected">昵称: </td>
+            <td>
+                <input type="text" id="name" placeholder="例如Tim、张三等">
+            </td>
+        </tr>
+
+        <!-- 第二行: 密码 -->
+        <tr>
+            <td class="unselected">密码: </td>
+            <td>
+                <input type="password" id="password" placeholder="请输入密码...">
+            </td>
+        </tr>
+
+        <!-- 第三行: 确认 -->
+        <tr>
+            <td>确认: </td>
+            <td>
+                <input type="password" id="confirm" placeholder="请确认密码...">
+            </td>
+        </tr>
+
+        <!-- 第四行: 性别 -->
+        <tr>
+            <td class="unselected">性别: </td>
+            <td>
+                <input type="radio" name="sex" id="man" checked="checked"><label for="man"><img
+                        src="images/Man.png">男</label>
+                <input type="radio" name="sex" id="woman"><label for="woman"><img src="images/Woman.png"> 女</label>
+            </td>
+        </tr>
+
+        <!-- 第五行: 简介 -->
+        <tr>
+            <td class="unselected">简介: </td>
+            <td>
+                <textarea placeholder="请填写你的简介..." id="information"></textarea>
+            </td>
+        </tr>
+
+        <!-- 第六行: 协议 -->
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="protocol"><label for="protocol" class="unselected">
+                    我同意
+                    <a href="#">《X-社区公约》</a>
+                    等相关条款
+                </label>
+            </td>
+        </tr>
+
+        <!-- 第七行: 注册 -->
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="Sign()">注册</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="scripts/Sign.js"></script>
+</body>
+
+</html>

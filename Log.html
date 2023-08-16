@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>X- 登录页</title>
+    <link rel="icon" href="images/Icon.png" sizes="16x16">
+    <style>
+        @import "styles/Main.css";
+    </style>
+</head>
+
+<body>
+    <span class="unselected">
+        <a href="Home.html">
+            <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150">
+        </a>
+    </span>
+
+    <h2>
+        <a href="Sign.html">注册</a>
+        /
+        <a href="Log.html">登录</a>
+
+    </h2>
+
+    <table width="350">
+        <!-- 第一行: 昵称 -->
+        <tr>
+            <td class="unselected">昵称: </td>
+            <td>
+                <input type="text" id="name" placeholder="请输入昵称...">
+            </td>
+        </tr>
+
+        <!-- 第二行: 密码 -->
+        <tr>
+            <td>密码: </td>
+            <td>
+                <input type="password" id="password" placeholder="请输入密码...">
+            </td>
+        </tr>
+
+        <!-- 第三行: 登录 -->
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="Log()">登录</button>
+            </td>
+        </tr>
+    </table>
+    <script src="scripts/Log.js"></script>
+</body>
+
+</html>
