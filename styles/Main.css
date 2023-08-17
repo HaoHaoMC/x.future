@@ -28,11 +28,11 @@
 }
 
 /* 字体加粗 */
-.fontstrong{
+.fontbold{
     font-weight: bold;
 }
 
-/* 字体变细 */
+/* 字体减细 */
 .fontlight{
     font-weight: light;
 }
