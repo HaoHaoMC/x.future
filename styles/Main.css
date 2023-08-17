@@ -74,6 +74,13 @@ button:active {
     background-color: rgb(255, 200, 0);
 }
 
+code {
+    background-color: rgba(200, 200, 200, 50%);
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(200, 200, 200)
+}
+
 /* 简介的(最小,大)宽, 高度 */
 #information {
     width: 150px;
