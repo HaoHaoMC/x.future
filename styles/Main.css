@@ -1,4 +1,3 @@
-/* 不可选中 */
 .unselected {
     user-select: none;
 }
@@ -26,6 +25,16 @@
 /* 字体大小: 15 */
 .font15 {
     font-size: 15px;
+}
+
+/* 字体加粗 */
+.fontstrong{
+    font-weight: bold;
+}
+
+/* 字体变细 */
+.fontlight{
+    font-weight: light;
 }
 
 /* 圆角底色 */
