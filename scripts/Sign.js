@@ -1,11 +1,11 @@
 console.log("X- 注册页")
 function Sign() {
-    var Name = document.getElementById('name').value
-    var Password = document.getElementById('password').value
-    var Confirm = document.getElementById('confirm').value
-    var Sex = document.getElementById('man').checked
-    var Info = document.getElementById('information').value
-    var Proto = document.getElementById('protocol').checked
+    let Name = document.getElementById('name').value
+    let Password = document.getElementById('password').value
+    let Confirm = document.getElementById('confirm').value
+    let Sex = document.getElementById('man').checked
+    let Info = document.getElementById('information').value
+    let Proto = document.getElementById('protocol').checked
 
     // 获取注册信息
     if (Name === "") {
@@ -35,12 +35,14 @@ function Sign() {
     }
     // 检测输入内容是否合规
 
-    var Temp = [Name, Password, Sex, Info, Proto]
-    var UserInfo = JSON.stringify(Temp)
-    console.log(UserInfo)
+    let UInfo = [Name, Password, Sex, Info, Proto]
+    UInfo = JSON.stringify(UInfo)
+    console.alert(UInfo)
     // 将用户信息保存为一个数组并导出
 
-    // window.location.href = "./Main.html"
-    // 跳转至主页
+    if (confirm("要跳转到主页吗?") === true) {
+        window.location.href = "Main.html"
+    }
+    // 询问是否返回主页
 
 }
