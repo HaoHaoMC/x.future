@@ -27,13 +27,13 @@
     font-size: 15px;
 }
 
-/* 字体加粗 */
-.fontbold{
+/* 加粗字体 */
+.fontBold {
     font-weight: bold;
 }
 
-/* 字体减细 */
-.fontlight{
+/* 减细字体 */
+.fontLight {
     font-weight: light;
 }
 
