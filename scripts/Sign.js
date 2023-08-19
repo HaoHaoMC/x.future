@@ -3,7 +3,7 @@ function Sign() {
     let Name = document.getElementById('name').value
     let Password = document.getElementById('password').value
     let Confirm = document.getElementById('confirm').value
-    let Sex = document.getElementById('man').checked
+    let IsMan = document.getElementById('man').checked
     let Info = document.getElementById('information').value
     let Proto = document.getElementById('protocol').checked
 
@@ -35,7 +35,7 @@ function Sign() {
     }
     // 检测输入内容是否合规
 
-    let UInfo = [Name, Password, Sex, Info, Proto]
+    let UInfo = [Name, Password, IsMan, Info, Proto]
     UInfo = JSON.stringify(UInfo)
     console.alert(UInfo)
     // 将用户信息保存为一个数组并导出
