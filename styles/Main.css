@@ -32,6 +32,11 @@
     font-weight: bold;
 }
 
+/* 中粗字体 */
+.fontStrong {
+    font-weight: 550;
+}
+
 /* 减细字体 */
 .fontLight {
     font-weight: light;
@@ -39,13 +44,13 @@
 
 /* 圆角底色 */
 .underorange {
-    background-color: rgba(255, 120, 0, 50%);
+    background-color: #ff780080;
     border-radius: 5px;
 }
 
 /* 无操作文本: 黑色 */
 a {
-    color: black;
+    color: #000000;
 
 }
 
@@ -57,37 +62,45 @@ a:link {
 
 /* 悬停颜色 */
 a:hover {
-    color: orange;
+    color: #ffa500;
 }
 
 /* 点击后颜色 */
 a:active {
-    color: rgb(255, 200, 0);
+    color: #ffc800;
 
 }
 
 /* 按钮颜色 */
 button {
-    background-color: rgb(200, 200, 200);
+    background-color: #c8c8c8;
     font-size: 20px;
     border: none;
 }
 
 /* 按钮悬停颜色 */
 button:hover {
-    background-color: orange;
+    background-color: #ffa500;
 }
 
 /* 按钮点击颜色  */
 button:active {
-    background-color: rgb(255, 200, 0);
+    background-color: #ffc800;
 }
 
 code {
-    background-color: rgba(200, 200, 200, 50%);
+    background-color: #c8c8c880;
     border: solid;
     border-radius: 5px;
-    border-color: rgb(200, 200, 200)
+    border-color: #c8c8c8
+}
+
+/* 导航栏样式 */
+#jumpBar {
+    border-bottom: 2px;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+
 }
 
 /* 简介的(最小,大)宽, 高度 */

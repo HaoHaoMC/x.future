@@ -15,18 +15,20 @@
 
 <body>
     <!-- 导航栏 -->
-    <span>
-        <a href="Home.html">
-            <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
-        </a>
-    </span>
-    <span class="font30 fontBold">
-        <a href="Sign.html">注册</a>
-        /
-        <a href="Log.html">登录</a>
+    <span id="jumpBar">
+        <span>
+            <a href="Home.html">
+                <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
+            </a>
+        </span>
+        <span class="font25 fontBold">
+            <a href="Sign.html">注册</a>
+            /
+            <a href="Log.html">登录</a>
+        </span>
     </span>
 
-    <h2>游戏下载</h2>
+    <h2 id="game">游戏下载</h2>
     <table>
         <!-- 版本 类型 链接 -->
         <thead class="font20">
@@ -39,7 +41,7 @@
         <tbody class="font15">
             <!-- 第一行: 示例 -->
             <tr>
-                <td>B0.1</td>
+                <td class="fontStrong">B0.1</td>
                 <td>测试版</td>
                 <td>
                     <a href="files/Sorry.txt" download>下载</a>
@@ -49,9 +51,9 @@
         </tbody>
     </table>
 
-    <!-- 我们所创造的 -->
+    <!-- 我们的成就:  -->
     <div>
-        <h2>我们所创造的</h2>
+        <h2 id="created">我们的成就</h2>
         <ul>
             <li>
                 <a href="GSer.html" class="font15">GoodServer</a>
