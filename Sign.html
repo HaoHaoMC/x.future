@@ -14,18 +14,21 @@
 
 <body>
     <!-- 导航栏 -->
-    <span id="jumpBar">
-        <span>
-            <a href="Home.html">
-                <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
-            </a>
-        </span>
-        <span class="font25 fontBold">
-            <a href="Sign.html">注册</a>
-            /
-            <a href="Log.html">登录</a>
-        </span>
-    </span>
+    <div id="jumpBar">
+        <!-- 第一行 -->
+        <div>
+            <span>
+                <a href="Home.html">
+                    <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
+                </a>
+            </span>
+            <span class="font25 fontBolder">
+                <a href="Sign.html">注册</a>
+                /
+                <a href="Log.html">登录</a>
+            </span>
+        </div>
+    </div>
 
     <table width="350">
         <!-- 第一行: 昵称 -->
@@ -95,10 +98,11 @@
     <div>
         <h2>音乐播放器</h2>
         <audio src="music/Strad.mp3" id="music" controls autoplay loop>
-            音乐Music
+            音乐|Music
         </audio>
     </div>
-    
+
+    <!-- 导入JS脚本 -->
     <script src="scripts/Sign.js"></script>
 </body>
 

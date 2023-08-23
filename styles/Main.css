@@ -1,98 +1,54 @@
-.unselected {
-    user-select: none;
+/* 音频样式 */
+audio {
+    display: block;
+    border-color: #808080;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 2px;
+    background-color: #f1f3f4;
 }
 
-/* 可选中 */
-.selected {
-    user-select: text;
-}
-
-/* 字体大小: 30 */
-.font30 {
-    font-size: 30px;
-}
-
-/* 字体大小: 25 */
-.font25 {
-    font-size: 25px;
-}
-
-/* 字体大小: 20 */
-.font20 {
-    font-size: 20px;
-}
-
-/* 字体大小: 15 */
-.font15 {
-    font-size: 15px;
-}
-
-/* 较粗字体 */
-.fontBold {
-    font-weight: 510;
-}
-
-/* 加粗字体 */
-.fontBolder {
-    font-weight: bold;
-}
-
-/* 减细字体 */
-.fontLight {
-    font-weight: light;
-}
-
-.fontRed {
-    color: #FF0000;
-}
-
-
-/* 圆角底色 */
-.underorange {
-    background-color: #FF780080;
-    border-radius: 5px;
-}
-
-/* 无操作文本: 黑色 */
+/* 超链接默认: 黑色 */
 a {
     color: #000000;
 
 }
 
-/* 去除下划线 */
+/* 超链接下划线: 无 */
 a:link {
     text-decoration: none;
 
 }
 
-/* 悬停颜色 */
+/* 悬停超链接: 橙黄色 */
 a:hover {
     color: #FFA500;
 }
 
-/* 点击后颜色 */
+/* 点击超链接: 黄色 */
 a:active {
     color: #FFC800;
 
 }
 
-/* 按钮颜色 */
+/* 按钮默认: 灰白色 */
 button {
     background-color: #C8C8C8;
     font-size: 20px;
     border: none;
 }
 
-/* 按钮悬停颜色 */
+/* 悬停按钮:橙黄色 */
 button:hover {
     background-color: #FFA500;
 }
 
-/* 按钮点击颜色  */
+/* 点击按钮: 黄色 */
 button:active {
     background-color: #FFC800;
 }
 
+/* 代码标签样式 */
 code {
     background-color: #C8C8C880;
     border: solid;
@@ -117,12 +73,57 @@ code {
     max-height: 200px;
 }
 
-/* 音频样式 */
-audio {
-    display: block;
-    border-color: #808080;
-    border-style: solid;
-    border-radius: 16px;
-    border-width: 2px;
-    background-color: #f1f3f4;
+.unselected {
+    user-select: none;
+}
+
+/* 可选中 */
+.selected {
+    user-select: text;
+}
+
+/* 字体大小: 30 */
+.font30 {
+    font-size: 30px;
+}
+
+/* 字体大小: 25 */
+.font25 {
+    font-size: 25px;
+}
+
+/* 字体大小: 20 */
+.font20 {
+    font-size: 20px;
+}
+
+/* 字体大小: 18 */
+.font18 {
+    font-size: 18px;
+}
+
+/* 较粗字体 */
+.fontBold {
+    font-weight: 545;
+}
+
+/* 加粗字体 */
+.fontBolder {
+    font-weight: bold;
+}
+
+/* 减细字体 */
+.fontLight {
+    font-weight: light;
+}
+
+.fontRed {
+    color: #FF0000;
+}
+
+
+/* 圆角底色 */
+.underorange {
+    background-color: #FF780080;
+    border-radius: 5px;
 }
