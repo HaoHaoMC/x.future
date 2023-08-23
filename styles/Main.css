@@ -1,11 +1,13 @@
-/* 音频样式 */
+/* 音频播放器样式 */
 audio {
-    display: block;
+    width: 250px;
+    height: 50px;
     border-color: #808080;
     border-style: solid;
-    border-radius: 16px;
+    border-radius: 15px;
     border-width: 2px;
     background-color: #f1f3f4;
+
 }
 
 /* 超链接默认: 黑色 */
@@ -17,43 +19,46 @@ a {
 /* 超链接下划线: 无 */
 a:link {
     text-decoration: none;
-
 }
 
 /* 悬停超链接: 橙黄色 */
 a:hover {
-    color: #FFA500;
+    color: #ffa500;
 }
 
 /* 点击超链接: 黄色 */
 a:active {
-    color: #FFC800;
-
+    color: #ffc800;
 }
 
-/* 按钮默认: 灰白色 */
+/* 窗口样式 */
+body {
+    width: 350px;
+    font-size: 17px;
+    font-family: '微软雅黑';
+}
+
+/* 按钮默认: 灰白色,大小20 */
 button {
-    background-color: #C8C8C8;
-    font-size: 20px;
-    border: none;
+    background-color: #c8c8c8;
+    font-size: 17px;
+    border-style: solid;
+    border-width: 2px;
+
 }
 
 /* 悬停按钮:橙黄色 */
 button:hover {
-    background-color: #FFA500;
+    background-color: #ff7700;
+    border-style: solid;
+    border-color: white;
+
 }
 
 /* 点击按钮: 黄色 */
 button:active {
-    background-color: #FFC800;
-}
+    background-color: #ffdd00;
 
-/* 代码标签样式 */
-code {
-    background-color: #C8C8C880;
-    border: solid;
-    border-radius: 5px;
-    border-color: #C8C8C8;
 }
 
 /* 导航栏样式 */
@@ -64,7 +69,7 @@ code {
 }
 
 /* 简介的(最小,大)宽, 高度 */
-#information {
+#describes {
     width: 150px;
     height: 100px;
     min-width: 150px;
@@ -73,6 +78,16 @@ code {
     max-height: 200px;
 }
 
+/* X-简介样式 */
+#info {
+    background-color: #66ff6680;
+    text-align: center;
+    border-radius: 15px;
+    width: 330px;
+
+}
+
+/* 不可选中 */
 .unselected {
     user-select: none;
 }
@@ -104,7 +119,7 @@ code {
 
 /* 较粗字体 */
 .fontBold {
-    font-weight: 545;
+    font-weight: 550;
 }
 
 /* 加粗字体 */
@@ -117,13 +132,44 @@ code {
     font-weight: light;
 }
 
+/* 字体颜色:红色 */
 .fontRed {
-    color: #FF0000;
+    color: #ff0000;
+}
+
+/* 字体颜色:橙色 */
+.fontOrange {
+    color: #ff6600;
 }
 
 
-/* 圆角底色 */
-.underorange {
-    background-color: #FF780080;
-    border-radius: 5px;
+/* 字体颜色:黄色 */
+.fontYellow {
+    color: #ff7700;
+}
+
+/* 字体颜色:紫色 */
+.fontPurple {
+    color: #ff00ff;
+}
+
+/* 圆角底红色 */
+.underRed {
+    background-color: #ff999980;
+    border-radius: 15px;
+
+}
+
+/* 圆角底橙色 */
+.underOrange {
+    background-color: #ff990080;
+    border-radius: 15px;
+
+}
+
+/* 圆角底黄色 */
+.underYellow {
+    background-color: #ffee0080;
+    border-radius: 15px;
+
 }

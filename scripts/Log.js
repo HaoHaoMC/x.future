@@ -1,4 +1,7 @@
 console.log("X- 登录页")
+for (let i = 0; i < 1; i++) {
+    document.getElementById("music").volume = 0.5
+}
 function Log() {
     var Name = document.getElementById("name").value
     var Pass = document.getElementById("password").value

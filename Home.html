@@ -8,6 +8,7 @@
     <title>X- 主页面</title>
     <link rel="icon" href="images/Icon.png" sizes="16x16">
     <style>
+        /* 导入主样式 */
         @import "styles/Main.css";
     </style>
 
@@ -15,7 +16,7 @@
 
 <body>
     <!-- 导航栏 -->
-    <div id="jumpBar">
+    <div id="jumpBar" class="alignTop">
         <!-- 第一行 -->
         <div>
             <span>
@@ -23,18 +24,30 @@
                     <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
                 </a>
             </span>
-            <span class="font25 fontBolder">
-                <a href="Sign.html">注册</a>
-                /
-                <a href="Log.html">登录</a>
+            <span class="font25 fontBolder" id="Sign_Log">
+                <a href="Sign.html">注册</a> / <a href="Log.html">登录</a>
             </span>
+        </div>
+    </div>
+
+    <!-- 简介 -->
+    <div>
+        <h2>X-Studio · 简介</h2>
+        <div id="info">
+            这里是未来世界创造者聚集的地方。<br>
+            在这里，你可以创造<span class="fontBold fontRed">各种各样</span>的作品。<br />
+            就比如说<span class="fontOrange fontBold">游戏、绘画、文章、动画</span>。<br />
+            不管一个<span class="fontRed fontBold">逻辑简单</span>的脚本，<br />
+            还是一个<span class="fontRed fontBold">内容极少</span>的网页，<br />
+            又或是一幅<span class="fontRed fontBold">色彩单调</span>的画，<br />
+            只要是<span class="fontRed fontBold">你做的</span>，它就是你的作品。<br />
         </div>
     </div>
 
     <!-- 下载游戏 -->
     <div>
         <h2 id="game">下载游戏</h2>
-        <table>
+        <table class="underOrange" style="width: 170px;">
             <!-- 版本 类型 链接 -->
             <thead class="font20">
                 <tr>
@@ -43,7 +56,7 @@
                     <th>链接</th>
                 </tr>
             </thead>
-            <tbody class="font20">
+            <tbody class="font18">
                 <!-- 第一行: 示例 -->
                 <tr>
                     <td class="fontBold">B0.1</td>
@@ -57,21 +70,24 @@
         </table>
     </div>
 
-    <!-- 我们的成就:  -->
-    <div>
-        <h2 id="created">我们的成就</h2>
-        <ul class="font20">
+    <!-- 我们创造的成就:  -->
+    <div style="width: 220px;">
+        <h2 id="created">我们创造的成就</h2>
+        <ul class="font20 underOrange">
             <li>
                 <a href="GSer.html" class="fontBold">GoodServer</a>
+            </li>
+            <li>
+                X-Studio 官网
             </li>
 
         </ul>
     </div>
 
-    <!-- 抒情古诗 -->
+    <!-- 日积月累 -->
     <div>
-        <h2>抒情古诗</h2>
-        <ul>
+        <h2>日积月累</h2>
+        <ul class="underYellow" style="width: 289px;">
             <li>淡泊以明志，宁静而致远。</li>
             <li>莫等闲，白了少年头，空悲切！</li>
             <li>盛年不重来，一日难再晨。</li>
@@ -87,6 +103,18 @@
         <audio src="music/Strad.mp3" id="music" controls autoplay loop>
             音乐|Music
         </audio>
+
+    </div>
+
+    <!-- 关于我们 -->
+    <div>
+        <h2>关于我们</h2>
+        <!-- 魔幻昊昊MC -->
+        <span>
+            <span class="fontBold fontRed">魔幻昊昊MC</span>
+            <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
+        </span>
+
     </div>
 
     <!-- 导入JS脚本 -->

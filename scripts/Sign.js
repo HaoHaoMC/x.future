@@ -1,10 +1,13 @@
 console.log("X- 注册页")
+for (let i = 0; i < 1; i++) {
+    document.getElementById("music").volume = 0.5
+}
 function Sign() {
     let Name = document.getElementById('name').value
     let Password = document.getElementById('password').value
     let Confirm = document.getElementById('confirm').value
     let IsMan = document.getElementById('man').checked
-    let Info = document.getElementById('information').value
+    let Info = document.getElementById('describes').value
     let Proto = document.getElementById('protocol').checked
 
     // 获取注册信息
