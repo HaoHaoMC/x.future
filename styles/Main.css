@@ -27,14 +27,14 @@
     font-size: 15px;
 }
 
-/* 加粗字体 */
+/* 较粗字体 */
 .fontBold {
-    font-weight: bold;
+    font-weight: 510;
 }
 
-/* 中粗字体 */
-.fontStrong {
-    font-weight: 550;
+/* 加粗字体 */
+.fontBolder {
+    font-weight: bold;
 }
 
 /* 减细字体 */
@@ -42,9 +42,14 @@
     font-weight: light;
 }
 
+.fontRed {
+    color: #FF0000;
+}
+
+
 /* 圆角底色 */
 .underorange {
-    background-color: #ff780080;
+    background-color: #FF780080;
     border-radius: 5px;
 }
 
@@ -62,37 +67,37 @@ a:link {
 
 /* 悬停颜色 */
 a:hover {
-    color: #ffa500;
+    color: #FFA500;
 }
 
 /* 点击后颜色 */
 a:active {
-    color: #ffc800;
+    color: #FFC800;
 
 }
 
 /* 按钮颜色 */
 button {
-    background-color: #c8c8c8;
+    background-color: #C8C8C8;
     font-size: 20px;
     border: none;
 }
 
 /* 按钮悬停颜色 */
 button:hover {
-    background-color: #ffa500;
+    background-color: #FFA500;
 }
 
 /* 按钮点击颜色  */
 button:active {
-    background-color: #ffc800;
+    background-color: #FFC800;
 }
 
 code {
-    background-color: #c8c8c880;
+    background-color: #C8C8C880;
     border: solid;
     border-radius: 5px;
-    border-color: #c8c8c8
+    border-color: #C8C8C8;
 }
 
 /* 导航栏样式 */
@@ -100,7 +105,6 @@ code {
     border-bottom: 2px;
     border-bottom-color: #000000;
     border-bottom-style: solid;
-
 }
 
 /* 简介的(最小,大)宽, 高度 */
@@ -111,4 +115,14 @@ code {
     min-height: 100px;
     max-width: 300px;
     max-height: 200px;
+}
+
+/* 音频样式 */
+audio {
+    display: block;
+    border-color: #808080;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 2px;
+    background-color: #f1f3f4;
 }
