@@ -33,9 +33,10 @@ a:active {
 
 /* 窗口样式 */
 body {
-    width: 350px;
-    font-size: 17px;
+    font-size: 18px;
     font-family: '微软雅黑';
+    margin: 0;
+
 }
 
 /* 按钮默认: 灰白色,大小20 */
@@ -63,9 +64,12 @@ button:active {
 
 /* 导航栏样式 */
 #jumpBar {
-    border-bottom: 2px;
-    border-bottom-color: #000000;
-    border-bottom-style: solid;
+    height: 32px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    background-color: #e0e0e0;
+
 }
 
 /* 简介的(最小,大)宽, 高度 */
@@ -78,12 +82,9 @@ button:active {
     max-height: 200px;
 }
 
-/* X-简介样式 */
-#info {
-    background-color: #66ff6680;
-    text-align: center;
-    border-radius: 15px;
-    width: 330px;
+/* 关于我们 */
+#about {
+    background-color: #e0e0e0;
 
 }
 
@@ -157,6 +158,10 @@ button:active {
 .underRed {
     background-color: #ff999980;
     border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 
 }
 
@@ -164,6 +169,10 @@ button:active {
 .underOrange {
     background-color: #ff990080;
     border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 
 }
 
@@ -171,5 +180,26 @@ button:active {
 .underYellow {
     background-color: #ffee0080;
     border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 
+}
+
+/* 圆角底绿色 */
+.underGreen {
+    background-color: #66ff6680;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
+
+/* 图片 */
+.images {
+    width: 100%;
+    mask-repeat: no-repeat;
 }

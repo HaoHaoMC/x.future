@@ -30,69 +30,73 @@
         </div>
     </div>
 
-    <table width="350" class="underOrange">
-        <!-- 第一行: 昵称 -->
-        <tr>
-            <td class="unselected fontBold">昵称: </td>
-            <td>
-                <input type="text" id="name" placeholder="例如Tim、张三等">
-            </td>
-        </tr>
+    <!-- 注册 -->
+    <div>
+        <table style="width: 350px;" class="underOrange">
+            <!-- 第一行: 昵称 -->
+            <tr>
+                <td style="width: 44px;" class="unselected fontBold">昵称: </td>
+                <td>
+                    <input type="text" id="name" placeholder="例如Tim、张三等">
+                </td>
+            </tr>
 
-        <!-- 第二行: 密码 -->
-        <tr>
-            <td class="unselected fontBold">密码: </td>
-            <td>
-                <input type="password" id="password" placeholder="请输入密码...">
-            </td>
-        </tr>
+            <!-- 第二行: 密码 -->
+            <tr>
+                <td class="unselected fontBold">密码: </td>
+                <td>
+                    <input type="password" id="password" placeholder="请输入密码...">
+                </td>
+            </tr>
 
-        <!-- 第三行: 校对 -->
-        <tr>
-            <td class="unselected fontBold">校对: </td>
-            <td>
-                <input type="password" id="confirm" placeholder="请校对密码...">
-            </td>
-        </tr>
+            <!-- 第三行: 校对 -->
+            <tr>
+                <td class="unselected fontBold">校对: </td>
+                <td>
+                    <input type="password" id="confirm" placeholder="请校对密码...">
+                </td>
+            </tr>
 
-        <!-- 第四行: 性别 -->
-        <tr>
-            <td class="unselected fontBold">性别: </td>
-            <td>
-                <input type="radio" name="gender" id="man" checked="checked"><label for="man"><img
-                        src="images/Man.png">男</label>
-                <input type="radio" name="gender" id="woman"><label for="woman"><img src="images/Woman.png"> 女</label>
-            </td>
-        </tr>
+            <!-- 第四行: 性别 -->
+            <tr>
+                <td class="unselected fontBold">性别: </td>
+                <td>
+                    <input type="radio" name="gender" id="man" checked="checked"><label for="man"><img
+                            src="images/Man.png">男</label>
+                    <input type="radio" name="gender" id="woman"><label for="woman"><img src="images/Woman.png">
+                        女</label>
+                </td>
+            </tr>
 
-        <!-- 第五行: 简介 -->
-        <tr>
-            <td class="unselected fontBold">简介: </td>
-            <td>
-                <textarea placeholder="请填写你的简介..." id="describes"></textarea>
-            </td>
-        </tr>
+            <!-- 第五行: 简介 -->
+            <tr>
+                <td class="unselected fontBold">简介: </td>
+                <td>
+                    <textarea placeholder="请填写你的简介..." id="describes"></textarea>
+                </td>
+            </tr>
 
-        <!-- 第六行: 协议 -->
-        <tr>
-            <td></td>
-            <td>
-                <input type="checkbox" id="protocol"><label for="protocol" class="unselected">
-                    我同意
-                    <a href="#">《X-社区公约》</a>
-                    等相关条款
-                </label>
-            </td>
-        </tr>
+            <!-- 第六行: 协议 -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="protocol"><label for="protocol" class="unselected">
+                        我同意
+                        <a href="#">《X-社区公约》</a>
+                        等相关条款
+                    </label>
+                </td>
+            </tr>
 
-        <!-- 第七行: 注册 -->
-        <tr>
-            <td></td>
-            <td>
-                <button onclick="Sign()">注册</button>
-            </td>
-        </tr>
-    </table>
+            <!-- 第七行: 注册 -->
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="Sign()">注册</button>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <!-- 音乐播放器 -->
     <div>
