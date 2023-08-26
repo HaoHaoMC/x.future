@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <!-- 导航栏 -->
-    <div id="jumpBar">
+    <!-- 页头 -->
+    <div id="head">
         <!-- 第一行 -->
         <div>
             <span>
@@ -30,81 +30,121 @@
         </div>
     </div>
 
+    <h2>注册</h2>
     <!-- 注册 -->
-    <div>
-        <table style="width: 350px;" class="underOrange">
-            <!-- 第一行: 昵称 -->
-            <tr>
-                <td style="width: 44px;" class="unselected fontBold">昵称: </td>
-                <td>
-                    <input type="text" id="name" placeholder="例如Tim、张三等">
-                </td>
-            </tr>
+    <table style="width: 350px;display:inline-block;text-align: left;" class="underOrange">
+        <!-- 第一行: 昵称 -->
+        <tr>
+            <td style="width: 44px;" class="unselected fontBold">昵称: </td>
+            <td>
+                <input type="text" id="name" placeholder="例如Tim、张三等">
+            </td>
+        </tr>
 
-            <!-- 第二行: 密码 -->
-            <tr>
-                <td class="unselected fontBold">密码: </td>
-                <td>
-                    <input type="password" id="password" placeholder="请输入密码...">
-                </td>
-            </tr>
+        <!-- 第二行: 密码 -->
+        <tr>
+            <td class="unselected fontBold">密码: </td>
+            <td>
+                <input type="password" id="password" placeholder="请输入密码...">
+            </td>
+        </tr>
 
-            <!-- 第三行: 校对 -->
-            <tr>
-                <td class="unselected fontBold">校对: </td>
-                <td>
-                    <input type="password" id="confirm" placeholder="请校对密码...">
-                </td>
-            </tr>
+        <!-- 第三行: 校对 -->
+        <tr>
+            <td class="unselected fontBold">校对: </td>
+            <td>
+                <input type="password" id="confirm" placeholder="请校对密码...">
+            </td>
+        </tr>
 
-            <!-- 第四行: 性别 -->
-            <tr>
-                <td class="unselected fontBold">性别: </td>
-                <td>
-                    <input type="radio" name="gender" id="man" checked="checked"><label for="man"><img
-                            src="images/Man.png">男</label>
-                    <input type="radio" name="gender" id="woman"><label for="woman"><img src="images/Woman.png">
-                        女</label>
-                </td>
-            </tr>
+        <!-- 第四行: 性别 -->
+        <tr>
+            <td class="unselected fontBold">性别: </td>
+            <td>
+                <input type="radio" name="gender" id="man" checked="checked"><label for="man"><img
+                        src="images/Man.png">男</label>
+                <input type="radio" name="gender" id="woman"><label for="woman"><img src="images/Woman.png">
+                    女</label>
+            </td>
+        </tr>
 
-            <!-- 第五行: 简介 -->
-            <tr>
-                <td class="unselected fontBold">简介: </td>
-                <td>
-                    <textarea placeholder="请填写你的简介..." id="describes"></textarea>
-                </td>
-            </tr>
+        <!-- 第五行: 简介 -->
+        <tr>
+            <td class="unselected fontBold">简介: </td>
+            <td>
+                <textarea placeholder="请填写你的简介..." id="describes"></textarea>
+            </td>
+        </tr>
 
-            <!-- 第六行: 协议 -->
-            <tr>
-                <td></td>
-                <td>
-                    <input type="checkbox" id="protocol"><label for="protocol" class="unselected">
-                        我同意
-                        <a href="#">《X-社区公约》</a>
-                        等相关条款
-                    </label>
-                </td>
-            </tr>
+        <!-- 第六行: 协议 -->
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="protocol"><label for="protocol" class="unselected">
+                    我同意
+                    <a href="#">《X-社区公约》</a>
+                    等相关条款
+                </label>
+            </td>
+        </tr>
 
-            <!-- 第七行: 注册 -->
-            <tr>
-                <td></td>
-                <td>
-                    <button onclick="Sign()">注册</button>
-                </td>
-            </tr>
-        </table>
-    </div>
+        <!-- 第七行: 注册 -->
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="Sign()">注册</button>
+            </td>
+        </tr>
+    </table>
 
-    <!-- 音乐播放器 -->
-    <div>
-        <h2>音乐播放器</h2>
-        <audio src="music/Strad.mp3" id="music" controls autoplay loop>
-            音乐|Music
-        </audio>
-    </div>
+    <!-- 页脚 -->
+    <table style="margin-top:16px;width:100%;text-align: left;" id="foot">
+        <!-- 第一行:声明 播放器 -->
+        <tr>
+            <!-- 声明 -->
+            <td rowspan="2">
+                <div class="fontRed fontBold">声明：</div>
+                <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
+                <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
+                <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
+            </td>
+
+            <!-- 占位 -->
+            <td>
+
+            </td>
+
+            <!-- 音乐播放器 -->
+            <td style="text-align: right;" rowspan="4">
+                <h2 style="text-align: center;">音乐播放器</h2>
+                <audio src="music/Strad.mp3" id="music" controls autoplay loop>
+                    音乐|Music
+                </audio>
+            </td>
+        </tr>
+
+        <!-- 第二行:占位 -->
+        <tr>
+
+        </tr>
+
+        <!-- 第三行:魔幻昊昊MC -->
+        <tr>
+            <td>
+                <span class="fontBold fontRed">魔幻昊昊MC：</span>
+                <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
+            </td>
+        </tr>
+        <!-- 第四行:GoodServer跳转 -->
+        <tr>
+            <td>
+                <span class="fontRed fontBold">GoodServer：</span>
+                <a href="GSer.html">
+                    点此跳转
+                </a>
+            </td>
+        </tr>
+    </table>
 
     <!-- 导入JS脚本 -->
     <script src="scripts/Sign.js"></script>

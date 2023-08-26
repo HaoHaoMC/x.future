@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>X- 主页面</title>
-    <link rel="icon" href="images/Icon.png" sizes="16x16">
+    <link rel="icon" href="images/Icon.png">
     <style>
         @import "styles/Main.css";
     </style>
@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <!-- 导航栏 -->
-    <div id="jumpBar">
+    <!-- 页头 -->
+    <div id="head">
         <!-- 第一行 -->
         <div>
             <span>
@@ -29,97 +29,144 @@
         </div>
     </div>
 
-    <!-- 简介 -->
-    <div style="width: 320px;">
-        <h2>X-Studio · 简介</h2>
-        <div class="underGreen">
-            <img style="width: 100%;" src="images/Codes.png" alt="Codes">
-            这里是未来世界创造者聚集的地方。<br>
-            在这里，你可以创造<span class="fontBold fontRed">各种各样</span>的作品。<br />
-            就比如说<span class="fontOrange fontBold">游戏、绘画、文章、动画</span>。<br />
-            不管一个<span class="fontRed fontBold">逻辑简单</span>的脚本，<br />
-            还是一个<span class="fontRed fontBold">内容极少</span>的网页，<br />
-            又或是一幅<span class="fontRed fontBold">色彩单调</span>的画，<br />
-            只要是<span class="fontRed fontBold">你做的</span>，它就是你的作品。<br />
-        </div>
-    </div>
+    <!-- 标题 内容 -->
+    <table style="margin-top:16px;width:100%;" class="underOrange">
+        <!-- 第一行: 标题 -->
+        <tr>
+            <!-- X-Studio·简介 -->
+            <td>
+                <h2>X-Studio·简介</h2>
+            </td>
 
-    <!-- 下载游戏 -->
-    <div style="width: 350px;">
-        <h2 id="game">下载游戏</h2>
-        <table style="width: 170px;" class="underOrange">
-            <!-- 版本 类型 链接 -->
-            <thead class="font20">
-                <tr>
-                    <th>版本</th>
-                    <th>类型</th>
-                    <th>链接</th>
-                </tr>
-            </thead>
-            <tbody class="font18">
-                <!-- 第一行: 示例 -->
-                <tr>
-                    <td class="fontBold">B0.1</td>
-                    <td>测试版</td>
-                    <td>
-                        <a href="files/Sorry.txt" download>下载</a>
-                    </td>
-                </tr>
+            <!-- 开发趣事 -->
+            <td>
+                <h2>开发趣事</h2>
+            </td>
+        </tr>
 
-            </tbody>
-        </table>
-    </div>
+        <!-- 第二行:内容 -->
+        <tr style="height: 161px;">
+            <!-- 简介 -->
+            <td style="width:300px;" class="underGreen">
+                这里是未来世界创造者聚集的地方。<br>
+                在这里，你可以创造<span class="fontBold fontRed">各种各样</span>的作品。<br />
+                就比如说<span class="fontOrange fontBold">游戏、绘画、文章、动画</span>。<br />
+                不管一个<span class="fontRed fontBold">逻辑简单</span>的脚本，<br />
+                还是一个<span class="fontRed fontBold">内容极少</span>的网页，<br />
+                又或是一幅<span class="fontRed fontBold">色彩单调</span>的画，<br />
+                只要是<span class="fontRed fontBold">你做的</span>，它就是你的作品。<br />
+            </td>
 
-    <!-- 日积月累 -->
-    <div style="width: 350px;">
-        <h2>日积月累</h2>
-        <ul class="underYellow" style="width: 289px;">
-            <li>淡泊以明志，宁静而致远。</li>
-            <li>莫等闲，白了少年头，空悲切！</li>
-            <li>盛年不重来，一日难再晨。</li>
-            <li>及时当勉励，岁月不待人。</li>
-            <li>宁可枝头抱香死，何曾吹落北风中。</li>
-            <li>会当凌绝顶，一览众山小。</li>
-        </ul>
-    </div>
+            <!-- 开发趣事 -->
+            <td style="width:320px;">
+                <img style="width: 90%;" class="images" src="images/Develop.png" alt="Funs of Develop">
+            </td>
+        </tr>
+    </table>
 
-    <!-- 音乐播放器 -->
-    <div style="width: 350px;">
-        <h2>音乐播放器</h2>
-        <audio src="music/Strad.mp3" id="music" controls autoplay loop>
-            音乐|Music
-        </audio>
+    <!-- 下载游戏 日积月累 -->
+    <table style="margin-top:16px;width: 100%;" class="underYellow">
+        <!-- 下载游戏 占位 日积月累 -->
+        <tr style="text-align: left;">
 
-    </div>
+            <!-- 下载游戏 -->
+            <td style="width: 300px;">
+                <h2 id="game">下载游戏</h2>
+                <table style="width: 250px;" class="underOrange">
+                    <!-- 序号 版本 类型 链接 -->
+                    <thead class="font20">
+                        <tr>
+                            <th>序号</th>
+                            <th>版本</th>
+                            <th>类型</th>
+                            <th>链接</th>
+                        </tr>
+                    </thead>
 
-    <!-- 关于我们 -->
-    <div id="about">
-        <h2>关于我们</h2>
-        <!-- 声明 -->
-        <div>
-            <span class="fontRed fontBold">声明：</span>
-            <span>
-                X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，<br />
-                其他组织所发生的事与我工作室无关，<br />
-                同理，我工作室发生的事与其他组织无关。
-            </span>
-        </div><br />
+                    <tbody class="font18">
+                        <!-- 第一行:示例 -->
+                        <tr>
+                            <td>示例1</td>
+                            <td class="fontBold">B0.1</td>
+                            <td>测试版</td>
+                            <td rowspan="2" style="border-left: solid 1px #000; padding-left: 4px;">
+                                <a href="files/Sorry.txt" download>下载</a>
+                            </td>
+                        </tr>
 
-        <!-- 魔幻昊昊MC -->
-        <div>
-            <span class="fontBold fontRed">魔幻昊昊MC：</span>
-            <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
-        </div>
+                        <!-- 第二行:示例 -->
+                        <tr>
+                            <td>示例2</td>
+                            <td class="fontBold">R0.2</td>
+                            <td>正式版</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
 
-        <!-- GoodServer页面 -->
-        <div>
-            <span class="fontRed fontBold">GoodServer：</span>
-            <a href="GSer.html" target="_blank">
-                跳转
-            </a>
-        </div>
+            <!-- 日积月累 -->
+            <td style="width: 300px;text-align: right;">
+                <h2>日积月累</h2>
+                <ul style="padding-left:1em;list-style-type: none;text-align: left;" class="underGreen">
+                    <li>淡泊以明志，宁静而致远。</li>
+                    <li>莫等闲，白了少年头，空悲切！</li>
+                    <li>盛年不重来，一日难再晨。</li>
+                    <li>及时当勉励，岁月不待人。</li>
+                    <li>宁可枝头抱香死，何曾吹落北风中。</li>
+                    <li>会当凌绝顶，一览众山小。</li>
+                </ul>
+            </td>
 
-    </div>
+        </tr>
+    </table>
+
+    <!-- 页脚 -->
+    <table style="margin-top:16px;width:100%;text-align: left;" id="foot">
+        <!-- 第一行:声明 播放器 -->
+        <tr>
+            <!-- 声明 -->
+            <td rowspan="2">
+                <div class="fontRed fontBold">声明：</div>
+                <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
+                <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
+                <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
+            </td>
+
+            <!-- 占位 -->
+            <td></td>
+
+            <!-- 音乐播放器 -->
+            <td style="text-align: right;" rowspan="4">
+                <h2 style="text-align: center;">音乐播放器</h2>
+                <audio style="width: 200px;" src="music/Strad.mp3" id="music" controls autoplay loop>
+                    音乐|Music
+                </audio>
+            </td>
+        </tr>
+
+        <!-- 第二行:占位 -->
+        <tr>
+
+        </tr>
+
+        <!-- 第三行:魔幻昊昊MC -->
+        <tr>
+            <td>
+                <span class="fontBold fontRed">魔幻昊昊MC：</span>
+                <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
+            </td>
+        </tr>
+        <!-- 第四行:GoodServer跳转 -->
+        <tr>
+            <td>
+                <span class="fontRed fontBold">GoodServer：</span>
+                <a href="GSer.html">
+                    点此跳转
+                </a>
+            </td>
+        </tr>
+    </table>
 
     <!-- 导入JS脚本 -->
     <script src="scripts/Home.js"></script>

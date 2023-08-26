@@ -35,6 +35,7 @@ a:active {
 body {
     font-size: 18px;
     font-family: '微软雅黑';
+    text-align: center;
     margin: 0;
 
 }
@@ -62,14 +63,19 @@ button:active {
 
 }
 
-/* 导航栏样式 */
-#jumpBar {
+/* 页头 */
+#head {
     height: 32px;
     padding-top: 4px;
     padding-left: 4px;
     padding-bottom: 4px;
     background-color: #e0e0e0;
 
+}
+
+/* 页脚 */
+#foot {
+    background-color: #e0e0e0;
 }
 
 /* 简介的(最小,大)宽, 高度 */
@@ -80,12 +86,6 @@ button:active {
     min-height: 100px;
     max-width: 300px;
     max-height: 200px;
-}
-
-/* 关于我们 */
-#about {
-    background-color: #e0e0e0;
-
 }
 
 /* 不可选中 */
@@ -198,8 +198,9 @@ button:active {
 
 }
 
-/* 图片 */
+/* 图片样式 */
 .images {
     width: 100%;
     mask-repeat: no-repeat;
+
 }
