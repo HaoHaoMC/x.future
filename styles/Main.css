@@ -63,6 +63,11 @@ button:active {
 
 }
 
+/* 表格 */
+table {
+    text-align: center;
+}
+
 /* 页头 */
 #head {
     height: 32px;
