@@ -2,10 +2,7 @@
 audio {
     width: 250px;
     height: 50px;
-    border-color: #808080;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: 2px;
+    border: solid 2px 15px #808080;
     background-color: #f1f3f4;
 
 }
@@ -70,17 +67,18 @@ table {
 
 /* 页头 */
 #head {
-    height: 32px;
-    padding-top: 4px;
-    padding-left: 4px;
-    padding-bottom: 4px;
+    padding: 4px 0 4px 4px;
     background-color: #e0e0e0;
 
 }
 
 /* 页脚 */
 #foot {
+    width: 100%;
+    margin-top: 16px;
+    text-align: left;
     background-color: #e0e0e0;
+
 }
 
 /* 简介的(最小,大)宽, 高度 */
@@ -163,10 +161,7 @@ table {
 .underRed {
     background-color: #ff999980;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px 8px 10px 10px;
 
 }
 
@@ -174,10 +169,7 @@ table {
 .underOrange {
     background-color: #ff990080;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px 8px 10px 10px;
 
 }
 
@@ -185,10 +177,7 @@ table {
 .underYellow {
     background-color: #ffee0080;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px 8px 10px 10px;
 
 }
 
@@ -196,10 +185,7 @@ table {
 .underGreen {
     background-color: #66ff6680;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 8px 8px 10px 10px;
 
 }
 

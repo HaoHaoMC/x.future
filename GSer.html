@@ -9,6 +9,88 @@
     <link rel="icon" href="images/Icon.png">
     <style>
         @import "styles/Main.css";
+
+        /* 1K竖屏 */
+        @media screen and (min-width:500px) and (min-height:1000px) {
+
+            #creator,
+            #url {
+                display: inline;
+                width: 100%;
+            }
+
+        }
+
+        /* 1K横屏 */
+        @media screen and (min-width:1000px) and (min-height:500px) {
+
+            #creator,
+            #url {
+                display: inline-block;
+                width: 25%;
+            }
+
+        }
+
+        /* 2K竖屏 */
+        @media screen and (min-width:1000px) and (min-height:2000px) {
+
+            #creator,
+            #url {
+                display: inline;
+                width: 100%;
+            }
+        }
+
+        /* 2K横屏 */
+        @media screen and (min-width:2000px) and (min-height:1000px) {
+
+            #creator,
+            #url {
+                display: inline-block;
+                width: 25%;
+            }
+        }
+
+        /* 3K竖屏 */
+        @media screen and (min-width:1500px) and (min-height:3000px) {
+
+            #creator,
+            #url {
+                display: inline;
+                width: 100%;
+            }
+        }
+
+        /* 3K横屏 */
+        @media screen and (min-width:3000px) and (min-height:1500px) {
+
+            #creator,
+            #url {
+                display: inline-block;
+                width: 25%;
+            }
+        }
+
+        /* 4K竖屏 */
+        @media screen and (min-width:2000px) and (min-height:4000px) {
+
+            #creator,
+            #url {
+                display: inline;
+                width: 100%;
+            }
+        }
+
+        /* 4K横屏 */
+        @media screen and (min-width:4000px) and (min-height:2000px) {
+
+            #creator,
+            #url {
+                display: inline-block;
+                width: 25%;
+            }
+        }
     </style>
 
 </head>
@@ -16,83 +98,66 @@
 <body>
     <!-- 页头 -->
     <div id="head">
-        <!-- 第一行 -->
-        <div>
-            <span>
-                <a href="Home.html">
-                    <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
-                </a>
-            </span>
-            <span class="font25 fontBolder">
-                <a href="Sign.html">注册</a>
-                /
-                <a href="Log.html">登录</a>
-            </span>
-        </div>
+        <span>
+            <a href="Home.html">
+                <img src="images/Title.png" alt="X-Studio" title="X- 主页面" width="150" height="33">
+            </a>
+        </span>
+        <span class="font25 fontBolder">
+            <a href="Sign.html">注册</a>
+            /
+            <a href="Log.html">登录</a>
+        </span>
     </div>
 
-    <table style="text-align: left;width: 100%;">
-        <!-- 第一行:标题 -->
-        <tr>
-            <!-- 创建者 -->
-            <td style="width: 250px;padding-right: 200px;text-align: center;">
-                <h2 id="creator">创建者</h2>
+    <!-- 创建者 游戏地址 -->
+    <div style="display: inline-block;width: 80%;margin-top: 16px;" class="underYellow">
+        <!-- 创建者 -->
+        <div style="display: inline-block;" id="creator">
+            <h2 style="text-align: center;">创建者</h2>
+            <ol style="list-style: none;" class="underOrange">
+                <!-- 魔幻昊昊MC -->
+                <li>
+                    <a class="fontRed" href="https://space.bilibili.com/1484865927" target="_blank">
+                        服主: 魔幻昊昊MC<br />
+                        (RelaxedBeast110)
+                    </a>
+                </li>
+                <!-- cn末子 -->
+                <li>
+                    <a class="fontOrange" href="https://space.bilibili.com/1955648043" target="_blank">
+                        特别管理: cn末子<br />
+                        (MO 230 224)
+                    </a>
+                </li>
+                <!-- 我的世界java破坏者 -->
+                <li>
+                    <a class="fontYellow" href="https://space.bilibili.com/651064085" target="_blank">
+                        管理: 我的世界java破坏者<br />
+                        (TameableEmu1974)
+                    </a>
+                </li>
+                <!-- 跳跃史蒂夫 -->
+                <li>
+                    <a class="fontYellow" href="https://space.bilibili.com/489693115" target="_blank">
+                        管理: 跳跃史蒂夫<br />
+                        (JumpSteve2008)
+                    </a>
+                </li>
+                <!-- _KIDIHUO_ -->
+                <li>
+                    <a class="fontPurple" href="https://space.bilibili.com/3493132490508949" target="_blank">
+                        贵宾: _KIDIHUO_
+                    </a>
+                </li>
 
-            </td>
+            </ol>
+        </div>
 
-            <!-- 游戏地址 -->
-            <td style="width: 250px;padding-right: 200px;text-align: right;">
-                <h2 id="server">游戏地址</h2>
-
-
-            </td>
-        </tr>
-
-        <!-- 第二行:内容 -->
-        <tr>
-            <!-- 创建者 -->
-            <td style="list-style: none;">
-                <ol class="underOrange">
-                    <!-- 魔幻昊昊MC -->
-                    <li>
-                        <a class="fontRed" href="https://space.bilibili.com/1484865927" target="_blank">
-                            服主: 魔幻昊昊MC<br />
-                            (RelaxedBeast110)
-                        </a>
-                    </li>
-                    <!-- cn末子 -->
-                    <li>
-                        <a class="fontOrange" href="https://space.bilibili.com/1955648043" target="_blank">
-                            特别管理: cn末子<br />
-                            (MO 230 224)
-                        </a>
-                    </li>
-                    <!-- 我的世界java破坏者 -->
-                    <li>
-                        <a class="fontYellow" href="https://space.bilibili.com/651064085" target="_blank">
-                            管理: 我的世界java破坏者<br />
-                            (TameableEmu1974)
-                        </a>
-                    </li>
-                    <!-- 跳跃史蒂夫 -->
-                    <li>
-                        <a class="fontYellow" href="https://space.bilibili.com/489693115" target="_blank">
-                            管理: 跳跃史蒂夫<br />
-                            (JumpSteve2008)
-                        </a>
-                    </li>
-                    <!-- _KIDIHUO_ -->
-                    <li>
-                        <a class="fontPurple" href="https://space.bilibili.com/3493132490508949" target="_blank">
-                            贵宾: _KIDIHUO_
-                        </a>
-                    </li>
-
-                </ol>
-            </td>
-
-            <!-- 游戏地址 -->
-            <td style="text-indent:1em;" class="underYellow">
+        <!-- 游戏地址 -->
+        <div style="display: inline-block;" id="url">
+            <h2 style="text-align: center;">游戏地址</h2>
+            <div class="underYellow">
                 <!-- 第一行: 地址 -->
                 <div>
                     <span class="fontBold unselected">地址: </span>
@@ -103,19 +168,21 @@
                     <span class="fontBold unselected">端口: </span>
                     <span>31306</span>
                 </div>
-            </td>
-        </tr>
-    </table>
 
+            </div>
+        </div>
+    </div>
 
     <!-- 页脚 -->
     <div style="margin-top:16px;width:100%;text-align: left;" id="foot">
         <!-- 声明 -->
         <div>
             <div class="fontRed fontBold">声明：</div>
-            <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
-            <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
-            <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
+            <div style="padding-left: 2em;">
+                <div>X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
+                <div>其他组织所发生的事与我工作室无关，</div>
+                <div>同理，我工作室发生的事与其他组织无关。</div>
+            </div>
         </div>
 
         <!-- 魔幻昊昊MC -->
