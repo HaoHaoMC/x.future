@@ -9,6 +9,88 @@
     <link rel="icon" href="images/Icon.png">
     <style>
         @import "styles/Main.css";
+
+        /* 1K竖屏 */
+        @media screen and (min-width:500px) and (min-height:1000px) {
+
+            #Codes,
+            #Funs {
+                display: inline;
+                width: 100%;
+            }
+
+        }
+
+        /* 1K横屏 */
+        @media screen and (min-width:1000px) and (min-height:500px) {
+
+            #Codes,
+            #Funs {
+                display: inline-block;
+                width: 25%;
+            }
+
+        }
+
+        /* 2K竖屏 */
+        @media screen and (min-width:1000px) and (min-height:2000px) {
+
+            #Codes,
+            #Funs {
+                display: inline;
+                width: 100%;
+            }
+        }
+
+        /* 2K横屏 */
+        @media screen and (min-width:2000px) and (min-height:1000px) {
+
+            #Codes,
+            #Funs {
+                display: inline-block;
+                width: 25%;
+            }
+        }
+
+        /* 3K竖屏 */
+        @media screen and (min-width:1500px) and (min-height:3000px) {
+
+            #Codes,
+            #Funs {
+                display: inline;
+                width: 100%;
+            }
+        }
+
+        /* 3K横屏 */
+        @media screen and (min-width:3000px) and (min-height:1500px) {
+
+            #Codes,
+            #Funs {
+                display: inline-block;
+                width: 25%;
+            }
+        }
+
+        /* 4K竖屏 */
+        @media screen and (min-width:2000px) and (min-height:4000px) {
+
+            #Codes,
+            #Funs {
+                display: inline;
+                width: 100%;
+            }
+        }
+
+        /* 4K横屏 */
+        @media screen and (min-width:4000px) and (min-height:2000px) {
+
+            #Codes,
+            #Funs {
+                display: inline-block;
+                width: 25%;
+            }
+        }
     </style>
 
 </head>
@@ -24,7 +106,9 @@
                 </a>
             </span>
             <span class="font25 fontBolder">
-                <a href="Sign.html">注册</a> / <a href="Log.html">登录</a>
+                <a href="Sign.html">注册</a>
+                /
+                <a href="Log.html">登录</a>
             </span>
         </div>
     </div>
@@ -32,12 +116,12 @@
     <!-- 代码 简介 趣事 -->
     <div style="display: inline-block;margin-top: 16px;width: 80%;" class="underOrange">
         <!-- 屎山代码 -->
-        <div style="display: inline-block;text-align: center;width: 25%;" class="images">
+        <div style="display: inline-block;" class="images" id="Codes">
             <img style="display: inline;" class="images" src="images/Codes.png" alt="Codes of X-Studio">
         </div>
 
         <!-- X-Studio·简介 -->
-        <div style="display: inline-block;text-align: center;width: 30%;" class="underGreen">
+        <div style="display: inline-block;text-align: center;" class="underGreen">
             <div>这里是未来世界创造者聚集的地方。</div>
             <div>在这里，你可以创造<span class="fontBold fontRed">各种各样</span>的作品。</div>
             <div>就比如说<span class="fontOrange fontBold">游戏、绘画、文章、动画</span>。</div>
@@ -48,7 +132,7 @@
         </div>
 
         <!-- 开发趣事 -->
-        <div style="display: inline-block;text-align: center;width: 25%;" class="images">
+        <div style="display: inline-block;" class="images" id="Funs">
             <img style="display: inline;" class="images" src="images/Funs.png" alt="Funs of Develop">
         </div>
     </div>
@@ -105,39 +189,36 @@
         </div>
     </div>
 
-
     <!-- 页脚 -->
     <div style="margin-top:16px;width:100%;text-align: left;" id="foot">
-        <!-- 声明 魔幻昊昊MC GSer跳转 -->
-        <div style="display: inline-block;width:45%;">
-            <!-- 声明 -->
-            <div>
-                <div class="fontRed fontBold">声明：</div>
-                <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
-                <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
-                <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
-            </div>
+        <!-- 声明 -->
+        <div>
+            <div class="fontRed fontBold">声明：</div>
+            <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
+            <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
+            <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
+        </div>
 
-            <!-- 魔幻昊昊MC -->
-            <div>
-                <span class="fontBold fontRed">魔幻昊昊MC：</span>
-                <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
-            </div>
+        <!-- 魔幻昊昊MC -->
+        <div>
+            <span class="fontBold fontRed">魔幻昊昊MC：</span>
+            <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
+        </div>
 
-            <!-- GSer跳转 -->
-            <div>
-                <span class="fontRed fontBold">GoodServer：</span>
-                <a href="GSer.html">
-                    点此跳转
-                </a>
-            </div>
+        <!-- GSer跳转 -->
+        <div>
+            <span class="fontRed fontBold">GoodServer：</span>
+            <a href="GSer.html">
+                点此跳转
+            </a>
         </div>
 
         <!-- 音乐播放器 -->
-        <div style="display: inline-block;text-align: right;border-left: solid 1px #000;">
+        <div style="display: inline-block;">
             <h2>音乐播放器</h2>
-            <audio style="width: 220px;" src="music/Strad.mp3" id="music" controls autoplay loop>
-                音乐|Music
+            <audio style="width: 300px;" src="music/Strad.mp3" id="music" controls autoplay loop>
+                你的浏览器播放不了音乐
+                <a href="music/Strad.mp3" download>点此下载</a>
             </audio>
         </div>
     </div>

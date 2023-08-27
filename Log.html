@@ -59,53 +59,38 @@
     </table>
 
     <!-- 页脚 -->
-    <table style="margin-top:16px;width:100%;text-align: left;" id="foot">
-        <!-- 第一行:声明 播放器 -->
-        <tr>
-            <!-- 声明 -->
-            <td rowspan="2">
-                <div class="fontRed fontBold">声明：</div>
-                <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
-                <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
-                <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
-            </td>
+    <div style="margin-top:16px;width:100%;text-align: left;" id="foot">
+        <!-- 声明 -->
+        <div>
+            <div class="fontRed fontBold">声明：</div>
+            <div style="padding-left: 2em;">X-Studio(X-工作室)与其他团队、公司、工作室等组织无任何关系，</div>
+            <div style="padding-left: 2em;">其他组织所发生的事与我工作室无关，</div>
+            <div style="padding-left: 2em;">同理，我工作室发生的事与其他组织无关。</div>
+        </div>
 
-            <!-- 占位 -->
-            <td>
+        <!-- 魔幻昊昊MC -->
+        <div>
+            <span class="fontBold fontRed">魔幻昊昊MC：</span>
+            <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
+        </div>
 
-            </td>
+        <!-- GSer跳转 -->
+        <div>
+            <span class="fontRed fontBold">GoodServer：</span>
+            <a href="GSer.html">
+                点此跳转
+            </a>
+        </div>
 
-            <!-- 音乐播放器 -->
-            <td style="text-align: right;" rowspan="4">
-                <h2 style="text-align: center;">音乐播放器</h2>
-                <audio src="music/Strad.mp3" id="music" controls autoplay loop>
-                    音乐|Music
-                </audio>
-            </td>
-        </tr>
-
-        <!-- 第二行:占位 -->
-        <tr>
-
-        </tr>
-
-        <!-- 第三行:魔幻昊昊MC -->
-        <tr>
-            <td>
-                <span class="fontBold fontRed">魔幻昊昊MC：</span>
-                <a href="https://space.bilibili.com/1484865927" target="_blank">B站主页</a>
-            </td>
-        </tr>
-        <!-- 第四行:GoodServer跳转 -->
-        <tr>
-            <td>
-                <span class="fontRed fontBold">GoodServer：</span>
-                <a href="GSer.html">
-                    点此跳转
-                </a>
-            </td>
-        </tr>
-    </table>
+        <!-- 音乐播放器 -->
+        <div style="display: inline-block;">
+            <h2>音乐播放器</h2>
+            <audio style="width: 300px;" src="music/Strad.mp3" id="music" controls autoplay loop>
+                你的浏览器播放不了音乐
+                <a href="music/Strad.mp3" download>点此下载</a>
+            </audio>
+        </div>
+    </div>
 
     <!-- 导入JS脚本 -->
     <script src="scripts/Log.js"></script>
